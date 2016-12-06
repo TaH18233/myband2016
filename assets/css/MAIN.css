@@ -1,0 +1,82 @@
+body {
+    background-size: cover;
+    background-color: black;
+    background-attachment: fixed;
+}
+
+#logo{
+   background-image: url("../images/nickelback.png");
+    width: 438px;
+    height: 100px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+
+header{
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: black;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    clear: left;
+    background-color: black;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(109,200,204);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    margin-left: -16%;
+}
+
+.sidenav ul li  {
+    list-style-type: none;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: blue;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media (max-width: 800px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
